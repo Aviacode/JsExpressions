@@ -10,7 +10,5 @@
 		<Exec WorkingDirectory="Generator" Command="node_modules\.bin\typings install" StdOutEncoding="utf-8" />
 		<Exec WorkingDirectory="Generator" Command="node_modules\.bin\tsc" StdOutEncoding="utf-8" />
 		<Exec Command=".nuget\nuget pack JsExpressions.nuspec" StdOutEncoding="utf-8" />
-		<Exec Command=".nuget\nuget setApiKey eb12fd65-f474-4af6-be90-79f494614589" StdOutEncoding="utf-8" />
-		<Exec Command=".nuget\nuget push JsExpression.0.1.0.nupkg" StdOutEncoding="utf-8" />
 	</Target>
 </Project>
