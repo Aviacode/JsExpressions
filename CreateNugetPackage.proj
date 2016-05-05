@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<SolutionDir>$(MSBuildProjectDirectory)</SolutionDir>
+		<RestorePackages>true</RestorePackages>
+	</PropertyGroup>
+	<Target Name="Build">
+		<MSBuild Projects="JsExpressions\JsExpressions.csproj" Targets="Build" Properties="Configuration=Release;SolutionDir=$(SolutionDir)"/>
+		<Exec WorkingDirectory="Generator" Command="npm install" StdOutEncoding="utf-8" />
+		<Exec WorkingDirectory="Generator" Command="node_modules\.bin\typings install" StdOutEncoding="utf-8" />
+		<Exec WorkingDirectory="Generator" Command="node_modules\.bin\tsc" StdOutEncoding="utf-8" />
+		<Exec Command=".nuget\nuget pack JsExpressions.nuspec" StdOutEncoding="utf-8" />
+		<Exec Command=".nuget\nuget setApiKey eb12fd65-f474-4af6-be90-79f494614589" StdOutEncoding="utf-8" />
+		<Exec Command=".nuget\nuget push JsExpression.0.1.0.nupkg" StdOutEncoding="utf-8" />
+	</Target>
+</Project>
