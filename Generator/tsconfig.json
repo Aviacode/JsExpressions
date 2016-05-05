@@ -1,0 +1,9 @@
+{
+    "files": [
+        "main.ts", "enumBuilder.ts", "jsExpressionClassBuilder.ts", "jsExpressionFileBuilder.ts" 
+    ],
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6"
+    }
+}
