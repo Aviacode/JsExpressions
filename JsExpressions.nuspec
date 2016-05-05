@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>JsExpressions</id>
+    <version>0.1.0</version>
+    <authors>AviaCode</authors>
+    <owners>AviaCode</owners>
+    <licenseUrl>http://rem.mit-license.org</licenseUrl>
+    <projectUrl>https://github.com/Aviacode/JsExpressions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A JavaScript expression, C# string wrapper library</description>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+	<file src="JsExpressions\bin\Release\JsExpressions.dll" target="lib\net40\JsExpressions.dll" />
+	<file src="Generator\*.js" target="content\.bin\Generator" />
+	<file src="Generator\node_modules\" target="content\.bin\Generator\node_modules" />
+  </files>
+</package>
