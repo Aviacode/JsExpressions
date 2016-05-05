@@ -16,6 +16,6 @@
   <files>
 	<file src="JsExpressions\bin\Release\JsExpressions.dll" target="lib\net40\JsExpressions.dll" />
 	<file src="Generator\*.js" target="content\.bin\Generator" />
-	<file src="Generator\node_modules\" target="content\.bin\Generator\node_modules" />
+	<file src="Generator\package.json" target="content\.bin\Generator\package.json" />
   </files>
 </package>

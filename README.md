@@ -129,8 +129,10 @@ Using the generator, you can create CSharp subclasses of parent type JsExpressio
 
 ###Setup
 
-1. install node
-2. run node JsExpressionGenerator
+1. run ```install node```
+2. navigate to ~\.bin\Generator\
+3. run ```npm install --production```
+4. run node JsExpressionGenerator
 
 ##Additional benefits
 

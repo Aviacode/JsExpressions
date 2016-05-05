@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "glob": "^7.0.0",
-    "typescript": "1.8.2",
-    "typings": "^0.7.9"
+    "typescript": "1.8.2"
+  },
+  "devDependencies": {
+	"typings": "^0.7.9"
   }
 }
